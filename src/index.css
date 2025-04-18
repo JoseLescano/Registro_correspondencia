@@ -1,0 +1,92 @@
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.side-menu nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu nav ul li {
+  padding: 15px;
+}
+
+.side-menu nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.side-menu nav ul li a:hover {
+  background-color: #444;
+}
+
+/* Contenido principal */
+.main-content {
+  margin-left: 9cm; /* Esto deja espacio para el menú */
+  padding: 20px;
+  flex: 1;
+}
+
+/* Estilo para el logo (opcional) */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+  /* Contenedor principal */
+  .container {
+    display: flex;
+    height: 100vh; /* Esto asegura que la pantalla ocupe toda la altura de la ventana */
+  }
+  
+  /* Menú lateral */
+  .sidebar {
+    width: 250px; /* El ancho del menú lateral */
+    background-color: #333; /* Color del menú */
+    color: rgb(197, 38, 38);
+    padding: 15px;
+    position: fixed; /* Fijamos el menú a la izquierda */
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Contenido principal 
+  .main-content {
+    margin-left: 250px; 
+    padding: 20px;
+    width: 100%;
+  }*/
+  
+ 
+  
+ 
+  
+ 
+  
