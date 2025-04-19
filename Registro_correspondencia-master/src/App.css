@@ -1,0 +1,295 @@
+/* Estilo para toda la página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #808000;
+  /* Fondo verde oliva */
+}
+
+/* Contenedor principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  /* Hacer que los elementos estén alineados verticalmente */
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #808000;
+  /* Fondo verde oliva */
+}
+
+/* Estilo para el logo */
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+/* Menú de navegación */
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-flex;
+  /* Alinea los elementos de la lista en fila */
+  justify-content: center;
+  /* Alinea los elementos horizontalmente */
+  margin: 0%;
+}
+
+nav ul li1 {
+  border: rgb(17, 16, 17);
+  font-weight: bold;
+  font-size: 176%;
+  margin: 0 25px;
+  margin-top: 7%;
+  justify-content: center;  /* Alinea los elementos horizontalmente */
+  border-radius: 9px;
+  cursor: pointer;  /* Bordes redondeados para el borde */
+  box-sizing: border-box;
+
+}
+
+
+
+
+
+
+.nav-link.active {
+  background-color: #28a745;
+  /* Verde para el botón activo */
+  color: white;
+}
+
+/* Estilo para el contenido principal */
+.main-content {
+  width: 100%;
+  padding: 20px;
+  margin-top: 80px;
+  /* Da espacio para el logo y el menú */
+  text-align: center;
+  /* Centra el contenido */
+  flex: 1;
+}
+
+/* Estilo para el carrusel */
+.carousel-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.carousel img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo para el formulario en Registrar Documento */
+form {
+  width: 80%;
+  margin: 80px auto;
+
+  max-width: 1700px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+  /* Asegura que el formulario no se superponga al logo y el menú */
+  display: block;
+  /* Se asegura de que el formulario ocupe el ancho asignado */
+
+}
+
+/* Estilo para los campos de entrada en el formulario */
+input,
+select,
+button {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.form-label {
+  display: block;
+  text-align: center;
+  /* Centra el texto */
+  font-weight: bold;
+  /* Pone el texto en negrita */
+  margin-bottom: 0.1px;
+  /* Espacio debajo del label */
+}
+
+/* Estilo para el formulario con tres columnas */
+.form-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que los campos se acomoden si la pantalla es más pequeña */
+  gap: 20px;
+  /* Espacio entre los campos */
+  justify-content: center;
+  /* Centra el formulario */
+  align-items: flex-start;
+  /* Alinea los items en la parte superior */
+}
+
+.form-horizontal .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  /* Esto hará que cada campo ocupe un 30% del ancho, permitiendo 3 columnas */
+}
+
+.form-horizontal .form-label {
+  text-align: center;
+  /* Centra el texto del label */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-horizontal input,
+.form-horizontal select {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  /* Asegura que los campos ocupen todo el ancho disponible */
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 2px solid #ddd;
+}
+
+/* Estilo del botón de registro */
+.button-submit {
+  width: 40%;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  /* Centra el contenido */
+  align-items: flex-start;
+  /* Alinea desde la parte superior */
+  min-height: 100vh;
+}
+
+/*tabla*/
+
+.report-container {
+  margin-top: 50px;
+  /* Ajustamos el espacio arriba */
+  padding: 20px;
+  text-align: center;
+  /* Centra el contenido */
+}
+
+.report-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  /* Agrega espacio debajo del título */
+}
+
+.report-table {
+  width: 100%;
+  /* Hace que la tabla sea un 80% del ancho */
+  margin: 0 auto;
+  /* Centra la tabla horizontalmente */
+  border-collapse: collapse;
+}
+
+.report-table th,
+.report-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.report-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.report-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.report-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.report-table tr:hover {
+  background-color: #e0e0e0;
+}

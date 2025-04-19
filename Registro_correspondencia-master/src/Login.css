@@ -1,0 +1,78 @@
+/* Login.css */
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrado perfecto en la pantalla */
+  width: 500px;  /* Ajusta el ancho del contenedor */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #6e6e06; /* Fondo verde oliva */
+  box-shadow: 1px 1px 50px #000; /* Agrega sombra para profundidad */
+  display: block;
+}
+
+h1 {
+
+  color: #201f1f; /* Color blanco para el título */
+  text-align: center;
+}
+
+/* Estilo para el formulario */
+form {
+  background-color: #fff; /* Fondo blanco para el formulario */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el formulario */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button1[type="button"] {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button1[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el checkbox */
+#remember-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: -150px;
+}
+
+#remember {
+  color: #0f0f0f;
+  font-size: 14px;
+}
+
+.close-btn {
+display: none;
+}
+
+.close-btn:hover {
+  opacity: 1;
+}
